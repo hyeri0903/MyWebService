@@ -1,6 +1,6 @@
-package com.hailey.spring.web.dto;
+package com.hailey.spring.dto;
 
-import com.hailey.spring.web.web.dto.HelloResponseDto;
+import com.hailey.spring.web.dto.HelloResponseDto;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

@@ -1,4 +1,4 @@
-package com.hailey.spring.web.web.dto;
+package com.hailey.spring.web.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

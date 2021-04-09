@@ -1,6 +1,6 @@
-package com.hailey.spring.web.web;
+package com.hailey.spring.web;
 
-import com.hailey.spring.web.web.dto.HelloResponseDto;
+import com.hailey.spring.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
