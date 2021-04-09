@@ -1,4 +1,4 @@
-package com.hailey.spring;
+package com.hailey.spring.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
