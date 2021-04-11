@@ -1,6 +1,6 @@
 package com.hailey.spring.web;
 
-import com.hailey.spring.service.posts.PostsService;
+import com.hailey.spring.service.PostsService;
 import com.hailey.spring.web.dto.PostsResponseDto;
 import com.hailey.spring.web.dto.PostsSaveRequestDto;
 import com.hailey.spring.web.dto.PostsUpdateRequestDto;
@@ -29,4 +29,10 @@ public class PostsApiController {
         return postsService.findById(id);
     }
 
+    //삭제
+    @DeleteMapping("/api/v1/posts/{id}")
+    public Long delete(@PathVariable Long id) {
+        postsService.delete(id);
+        return id;
+    }
 }
