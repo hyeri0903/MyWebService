@@ -10,15 +10,15 @@ This Project is my personal webservice
 
 [Use Skills]
 
--Spring Data Jpa, ORM
--Java
--Springboot
--mustache (HTML template engine)
--Spring Security Oauth2
+- Spring Data Jpa, ORM
+- Java
+- Springboot
+- mustache (HTML template engine)
+- Spring Security Oauth2
 
 [WebService]
 
--AWS EC2 (Linux AMI2)
--ssh Hostname -> EC2 접속
+- AWS EC2 (Linux AMI2)
+- ssh Hostname -> EC2 접속
 
 
