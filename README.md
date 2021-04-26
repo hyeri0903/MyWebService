@@ -9,8 +9,15 @@ This Project is my personal webservice
 - DB : h2 (Inmemory Database)
 
 [Use Skills]
+
 -Spring Data Jpa, ORM
 -Java
 -Springboot
 -mustache (HTML template engine)
 -Spring Security Oauth2
+
+[WebService]
+-AWS EC2 (Linux AMI2)
+-ssh Hostname -> EC2 접속
+
+
