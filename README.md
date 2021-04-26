@@ -19,6 +19,6 @@ This Project is my personal webservice
 [WebService]
 
 - AWS EC2 (Linux AMI2)
-- ssh Hostname@IP -> EC2 접속
+- ssh Hostname -> EC2 접속
 
 
