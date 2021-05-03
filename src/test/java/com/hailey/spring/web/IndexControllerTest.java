@@ -10,7 +10,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
-
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 public class IndexControllerTest {
@@ -19,11 +18,11 @@ public class IndexControllerTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void 메인페이지로_로딩() {
+    public void 메인페이지_로딩() {
         //when
         String body = this.restTemplate.getForObject("/", String.class);
 
         //then
-        assertThat(body).contains("스프링 부트로 시작하는 웹서비스");
+        assertThat(body).contains("스프링부트로 시작하는 웹 서비스");
     }
 }
