@@ -24,4 +24,4 @@ This Project is my personal webservice
 - ssh Hostname -> EC2 접속
 - MariaDB 10.4.13
 
-
+<img width="573" alt="image" src="https://user-images.githubusercontent.com/26623530/116869208-42501000-ac4b-11eb-9bf0-0bca06186456.png">
