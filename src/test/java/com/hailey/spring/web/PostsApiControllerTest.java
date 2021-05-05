@@ -6,6 +6,7 @@ import com.hailey.spring.domain.posts.PostsRepository;
 import com.hailey.spring.web.dto.PostsSaveRequestDto;
 import com.hailey.spring.web.dto.PostsUpdateRequestDto;
 
+import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,6 +29,7 @@ import static org.springframework.security.test.web.servlet.setup.SecurityMockMv
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 // For mockMvc
 
 @RunWith(SpringRunner.class)
@@ -48,7 +50,6 @@ public class PostsApiControllerTest {
 
     private MockMvc mvc;
 
-    //매번 테스트 시작 전 MockMvc 인스턴스 생성
     @Before
     public void setup() {
         mvc = MockMvcBuilders
@@ -76,7 +77,7 @@ public class PostsApiControllerTest {
 
         String url = "http://localhost:" + port + "/api/v1/posts";
 
-        //when 생성된 MockMvc를 통해 API테스트
+        //when
         mvc.perform(post(url)
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(new ObjectMapper().writeValueAsString(requestDto)))
@@ -84,8 +85,8 @@ public class PostsApiControllerTest {
 
         //then
         List<Posts> all = postsRepository.findAll();
-        assertThat(all.get(0).getTitle()).isEqualTo(title);
-        assertThat(all.get(0).getContent()).isEqualTo(content);
+        Assertions.assertThat(all.get(0).getTitle()).isEqualTo(title);
+        Assertions.assertThat(all.get(0).getContent()).isEqualTo(content);
     }
 
     @Test
@@ -117,7 +118,7 @@ public class PostsApiControllerTest {
 
         //then
         List<Posts> all = postsRepository.findAll();
-        assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
-        assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
+        Assertions.assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
+        Assertions.assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
     }
 }

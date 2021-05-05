@@ -1,4 +1,4 @@
-package com.hailey.spring;
+package com.hailey.spring.web;
 
 import com.hailey.spring.config.auth.SecurityConfig;
 import com.hailey.spring.web.HelloController;

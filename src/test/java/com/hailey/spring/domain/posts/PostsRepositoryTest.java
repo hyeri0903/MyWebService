@@ -32,7 +32,7 @@ public class PostsRepositoryTest {
         postsRepository.save(Posts.builder()
                 .title(title)
                 .content(content)
-                .author("hailey@gmail.com")
+                .author("jojoldu@gmail.com")
                 .build());
 
         //when
@@ -58,10 +58,10 @@ public class PostsRepositoryTest {
 
         //then
         Posts posts = postsList.get(0);
-        System.out.println(">>>>> createDate=" + posts.getCreatedDate()+", modifiedDate=" + posts.getModifiedDate());
+
+        System.out.println(">>>>>>>>> createDate=" + posts.getCreatedDate() + ", modifiedDate=" + posts.getModifiedDate());
 
         assertThat(posts.getCreatedDate()).isAfter(now);
         assertThat(posts.getModifiedDate()).isAfter(now);
-
     }
 }
