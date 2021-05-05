@@ -15,9 +15,9 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r hailey-springboot-webservice-project
+  - zip -r hailey-springboot-webservice
   - mkdir -p deploy
-  - mv hailey-springboot-webservice-project.zip deploy/hailey-springboot-webservice-project.zip
+  - mv hailey-springboot-webservice.zip deploy/hailey-springboot-webservice.zip
 
 deploy:
   - provider: s3
