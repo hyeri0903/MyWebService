@@ -1,15 +1,18 @@
-branches: 
-  only: 
-    - master
-cache: 
-  directories: 
-    - $HOME/.m2/repository
-    - $HOME/.gradle
-jdk: 
-  - openjdk8
 language: java
-notifications: 
-  email: 
-    recipients: 
-      - hyerijung0903@gmail.com
+jdk:
+  - openjdk11
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
 script: "./gradlew clean build"
+
+notifications:
+  email:
+    recipients:
+      - hyerijung0903@gmail.com
