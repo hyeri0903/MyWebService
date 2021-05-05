@@ -17,6 +17,7 @@ This Project is my personal webservice
 - Springboot
 - mustache (HTML template engine)
 - Spring Security Oauth2
+- Travis CI
 
 [WebService]
 
