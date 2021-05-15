@@ -17,7 +17,8 @@ This Project is my personal webservice
 - Springboot
 - mustache (HTML template engine)
 - Spring Security Oauth2
-- Travis CI
+- Travis CI ->  설정파일 : .travis.yml
+- AWS CodeDeploy -> 설정파일 : appspec.yml
 
 [WebService]
 
