@@ -26,8 +26,6 @@ This Project is my personal webservice
 - ssh Hostname -> EC2 접속
 - MariaDB 10.4.13
 
-## 전체구조
-<img width="769" alt="image" src="https://user-images.githubusercontent.com/26623530/117125510-8f132280-add4-11eb-92de-a2c348988eaf.png">
 
 ## 무중단 배포 전체 구조
 <img width="787" alt="image" src="https://user-images.githubusercontent.com/26623530/118348442-4fdb9300-b585-11eb-9729-dabe5e1aca16.png">
