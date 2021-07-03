@@ -5,7 +5,7 @@ This Project is my personal webservice
 *[스프링부트와 AWS로 혼자 구현하는 웹 서비스] 도서 참조
 
 [Project Setting]
-- Java 11 (jdk 1.8)
+- Java 11 
 - Gradle 4.10.2
 - Springboot 2.1.9
 - DB : h2 (Inmemory Database)
